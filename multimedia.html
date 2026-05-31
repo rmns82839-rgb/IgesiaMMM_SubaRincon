@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo de Multimedia | Iglesia MMM Suba Rincón</title>
+
+    <!-- SEO -->
+    <meta name="description" content="El equipo de Multimedia de la Iglesia MMM Suba Rincón transmite los cultos y produce contenido cristiano para toda la comunidad en Bogotá.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://igesiammm-subarincon.netlify.app/multimedia.html">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igesiammm-subarincon.netlify.app/multimedia.html">
+    <meta property="og:title" content="Equipo de Multimedia | Iglesia MMM Suba Rincón">
+    <meta property="og:description" content="El equipo de Multimedia de la Iglesia MMM Suba Rincón transmite los cultos y produce contenido cristiano para toda la comunidad en Bogotá.">
+    <meta property="og:image" content="https://igesiammm-subarincon.netlify.app/logo.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Iglesia MMM Suba Rincón">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Equipo de Multimedia | Iglesia MMM Suba Rincón">
+    <meta name="twitter:description" content="El equipo de Multimedia de la Iglesia MMM Suba Rincón transmite los cultos y produce contenido cristiano para toda la comunidad en Bogotá.">
+    <meta name="twitter:image" content="https://igesiammm-subarincon.netlify.app/logo.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.5/css/all.min.css">
+    <link rel="manifest" href="manifest.json">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-blue': '#1E40AF',
+                        'accent-yellow': '#FFD700',
+                        'mm-color': '#1e293b',
+                        'mm-accent': '#64748b',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-mm {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+        }
+        .area-card { transition: all 0.3s; }
+        .area-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+        .platform-chip { transition: all 0.2s; }
+        .platform-chip:hover { transform: scale(1.05); }
+        .glow-live {
+            animation: glow-pulse 2s ease-in-out infinite;
+        }
+        @keyframes glow-pulse {
+            0%, 100% { box-shadow: 0 0 8px rgba(239,68,68,0.5); }
+            50% { box-shadow: 0 0 20px rgba(239,68,68,0.9); }
+        }
+    </style>
+</head>
+<body class="min-h-screen font-sans bg-gray-50">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-900 shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-white hover:text-gray-300 transition font-bold">
+                <img src="logo.png" class="h-8 w-8 object-contain brightness-0 invert" alt="Logo MMM">
+                <span>Iglesia MMM Suba Rincón</span>
+            </a>
+            <span class="text-sm font-black uppercase tracking-wider px-4 py-1 rounded-full text-white bg-gray-700 border border-gray-600">
+                <i class="fas fa-video mr-1"></i> Equipo Multimedia
+            </span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-mm text-white py-20 px-4 relative overflow-hidden">
+        <!-- Decoración de fondo -->
+        <div class="absolute inset-0 overflow-hidden opacity-5">
+            <div class="absolute top-10 left-10 text-9xl"><i class="fas fa-video"></i></div>
+            <div class="absolute bottom-10 right-10 text-9xl"><i class="fas fa-microphone"></i></div>
+            <div class="absolute top-1/2 left-1/3 text-7xl"><i class="fas fa-film"></i></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto text-center">
+            <div class="w-24 h-24 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-white/20">
+                <i class="fas fa-photo-video text-5xl text-white"></i>
+            </div>
+            <span class="inline-flex items-center gap-2 bg-red-600 text-white text-xs font-black uppercase px-3 py-1 rounded-full mb-4 glow-live">
+                <span class="w-2 h-2 bg-white rounded-full animate-pulse"></span> En vivo cada domingo
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black mb-4" style="font-family: 'Montserrat', sans-serif;">
+                Equipo de Multimedia
+            </h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Llevando el mensaje de salvación más allá de las paredes del templo, a través de sonido, imagen y tecnología.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a href="#areas" class="px-6 py-3 bg-white text-gray-900 font-black rounded-full hover:bg-gray-100 transition shadow-lg">
+                    <i class="fas fa-th-large mr-2"></i> Ver Áreas
+                </a>
+                <a href="#plataformas" class="px-6 py-3 bg-transparent border-2 border-white/40 text-white font-black rounded-full hover:bg-white/10 transition">
+                    <i class="fas fa-share-alt mr-2"></i> Dónde nos ven
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Stats -->
+    <section class="py-10 px-4 bg-white border-b">
+        <div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <p class="text-3xl font-black text-gray-900">52+</p>
+                <p class="text-sm text-gray-500 font-bold mt-1">Cultos transmitidos al año</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl font-black text-gray-900">3</p>
+                <p class="text-sm text-gray-500 font-bold mt-1">Plataformas digitales</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl font-black text-gray-900">6+</p>
+                <p class="text-sm text-gray-500 font-bold mt-1">Voluntarios técnicos</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl font-black text-gray-900">HD</p>
+                <p class="text-sm text-gray-500 font-bold mt-1">Calidad de transmisión</p>
+            </div>
+        </div>
+    </section>
+
+    <main class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto space-y-16">
+
+            <!-- Misión y Visión -->
+            <section class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-gray-800">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-bullhorn text-2xl text-gray-800"></i>
+                    </div>
+                    <h2 class="text-2xl font-black text-gray-900 mb-3">Nuestra Misión</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Garantizar que cada palabra y nota musical sea transmitida con claridad y excelencia, tanto dentro del templo como a través de nuestras plataformas digitales, para que nadie se pierda la bendición sin importar dónde esté.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl shadow-lg p-8 border-t-4 border-gray-800">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-rocket text-2xl text-gray-800"></i>
+                    </div>
+                    <h2 class="text-2xl font-black text-gray-900 mb-3">Nuestra Visión</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        Ser un equipo innovador y altamente capacitado que usa la tecnología como herramienta evangelística, expandiendo el alcance de la Iglesia MMM Suba Rincón a nivel local, nacional e internacional.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Áreas de servicio -->
+            <section id="areas">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-500">Lo que hacemos</span>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mt-1">Áreas de Servicio</h2>
+                </div>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-gray-800 p-6 text-center">
+                            <i class="fas fa-volume-up text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Control de Sonido</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Gestión de micrófonos, mezcla de audio y monitoreo para una acústica perfecta en cada servicio.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-gray-400"></i> Mesa de mezcla digital</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-gray-400"></i> Micrófonos inalámbricos</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-gray-400"></i> Monitor de escenario</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-gray-400"></i> Sistema de subwoofers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-red-700 p-6 text-center">
+                            <i class="fas fa-video text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Streaming en Vivo</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Transmisión en directo de los cultos dominicales y eventos especiales a múltiples plataformas simultáneamente.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-red-400"></i> Cámaras HD en el templo</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-red-400"></i> Encoder de video en tiempo real</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-red-400"></i> Superposición de textos</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-red-400"></i> Multistream simultáneo</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-blue-800 p-6 text-center">
+                            <i class="fas fa-desktop text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Proyección y Diseño</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Proyección de letras de alabanza, versículos, anuncios y presentaciones en las pantallas del templo.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-blue-400"></i> Software de presentación</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-blue-400"></i> Diseño de slides</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-blue-400"></i> Anuncios animados</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-blue-400"></i> Biblioteca de versículos</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-purple-800 p-6 text-center">
+                            <i class="fas fa-cut text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Postproducción</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Edición de sermones, clips de redes sociales y archivos de predicaciones para el canal digital.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-purple-400"></i> Edición de video</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-purple-400"></i> Contenido para Reels/Shorts</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-purple-400"></i> Archivo digital de mensajes</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-purple-400"></i> Thumbnails y portadas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-green-800 p-6 text-center">
+                            <i class="fas fa-paint-brush text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Redes Sociales</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Creación de contenido gráfico y audiovisual para mantener activa la presencia digital de la iglesia.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-green-400"></i> Diseño de flyers y afiches</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-green-400"></i> Programación de publicaciones</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-green-400"></i> Fotografía de eventos</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-green-400"></i> Reels devocionales</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="area-card bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100">
+                        <div class="bg-yellow-700 p-6 text-center">
+                            <i class="fas fa-tools text-4xl text-white mb-3 block"></i>
+                            <h3 class="text-lg font-black text-white">Soporte Técnico</h3>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-sm text-gray-600 mb-4">Mantenimiento del equipo técnico del templo y soporte a otros ministerios que necesiten ayuda tecnológica.</p>
+                            <ul class="space-y-2 text-xs text-gray-500">
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-yellow-500"></i> Mantenimiento de equipos</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-yellow-500"></i> Gestión de cables y red</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-yellow-500"></i> Soporte a ministerios</li>
+                                <li class="flex items-center gap-2"><i class="fas fa-dot-circle text-yellow-500"></i> Inventario de equipos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Plataformas -->
+            <section id="plataformas" class="bg-gray-900 rounded-2xl p-8 md:p-12 text-white">
+                <div class="text-center mb-10">
+                    <span class="text-xs font-black uppercase tracking-widest text-gray-400">Encuéntranos en</span>
+                    <h2 class="text-3xl font-black text-white mt-1">Nuestras Plataformas</h2>
+                    <p class="text-gray-400 mt-2">Sigue los cultos en vivo desde donde estés</p>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://www.youtube.com/@TU_CANAL" target="_blank"
+                       class="platform-chip flex items-center gap-3 bg-red-700 hover:bg-red-600 px-6 py-3 rounded-full font-bold transition">
+                        <i class="fab fa-youtube text-xl"></i> YouTube
+                    </a>
+                    <a href="https://www.facebook.com/caballerossubarincon" target="_blank"
+                       class="platform-chip flex items-center gap-3 bg-blue-700 hover:bg-blue-600 px-6 py-3 rounded-full font-bold transition">
+                        <i class="fab fa-facebook text-xl"></i> Facebook Live
+                    </a>
+                    <a href="https://www.instagram.com/TU_INSTAGRAM" target="_blank"
+                       class="platform-chip flex items-center gap-3 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-6 py-3 rounded-full font-bold transition">
+                        <i class="fab fa-instagram text-xl"></i> Instagram
+                    </a>
+                    <a href="https://www.tiktok.com/@TU_TIKTOK" target="_blank"
+                       class="platform-chip flex items-center gap-3 bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full font-bold border border-gray-500 transition">
+                        <i class="fab fa-tiktok text-xl"></i> TikTok
+                    </a>
+                </div>
+                <p class="text-center text-gray-500 text-sm mt-6">📡 Transmisión en vivo todos los domingos</p>
+            </section>
+
+            <!-- Únete -->
+            <section class="bg-white rounded-2xl shadow-lg p-8 md:p-12 border border-gray-100 text-center">
+                <i class="fas fa-laptop-code text-5xl text-gray-800 mb-4 block"></i>
+                <h2 class="text-3xl font-black text-gray-900 mb-3">¿Te apasiona la tecnología?</h2>
+                <p class="text-gray-600 max-w-xl mx-auto mb-6">
+                    No importa si eres principiante o experto — si tienes pasión por servir con tecnología, tenemos un lugar para ti. Capacitamos a todos nuestros voluntarios.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://forms.gle/s53rJag1vfQ6rL2A6" target="_blank"
+                       class="px-6 py-3 bg-gray-900 text-white font-black rounded-full hover:bg-gray-700 transition shadow-lg">
+                        <i class="fas fa-paper-plane mr-2"></i> Quiero unirme
+                    </a>
+                    <a href="index.html"
+                       class="px-6 py-3 border-2 border-gray-200 text-gray-700 font-black rounded-full hover:bg-gray-50 transition">
+                        <i class="fas fa-home mr-2"></i> Volver al inicio
+                    </a>
+                </div>
+                <p class="mt-8 text-gray-500 font-bold">Líder: Hno. Juan Pérez — Equipo de Multimedia</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 px-4 text-center">
+        <img src="logo.png" loading="lazy" class="h-10 mx-auto mb-3 opacity-80 brightness-0 invert" alt="Logo">
+        <p class="text-gray-400 text-sm">&copy; 2025 Iglesia MMM Suba Rincón — Equipo de Multimedia</p>
+        <a href="index.html" class="text-gray-400 text-sm hover:underline mt-1 block">← Volver a la página principal</a>
+    </footer>
+
+    <script src="script.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js')
+      .then(function(reg) { console.log('[PWA] SW registrado:', reg.scope); })
+      .catch(function(err) { console.warn('[PWA] Error SW:', err); });
+  });
+}
+</script>
+</body>
+</html>

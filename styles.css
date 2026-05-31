@@ -1,0 +1,372 @@
+/* Fuente base del sitio */
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+/* Ajuste de legibilidad para Arial */
+body {
+    line-height: 1.6;
+    color: #1a202c; /* Un gris muy oscuro para que sea más fácil de leer que el negro puro */
+}
+
+h1, h2, h3, .font-black {
+    letter-spacing: -0.01em;
+    font-weight: bold;
+}
+
+
+/* ========================================================================
+   VARIABLES DE COLORES GLOBALES
+   ======================================================================== */
+:root {
+    --primary-blue: #1C3FA7; 
+    --accent-blue: #2A60E3; 
+    --accent-yellow: #FFD700; 
+    --light-bg-blue: #edf5ff; 
+
+    /* Versión RGB para overlay en CSS puro */
+    --primary-blue-rgb: 28, 63, 167;
+}
+
+/* ========================================================================
+   TAILWIND CSS EXTENSIONES Y CLASES PERSONALIZADAS
+   ======================================================================== */
+.accent-blue {
+    color: var(--accent-blue);
+}
+
+.bg-accent-blue {
+    background-color: var(--accent-blue);
+}
+
+.border-accent-blue {
+    border-color: var(--accent-blue);
+}
+
+.bg-accent-blue\/5 {
+    background-color: rgba(42, 96, 227, 0.05); 
+}
+
+.border-accent-blue\/20 {
+    border-color: rgba(42, 96, 227, 0.2); 
+}
+
+.border-accent-blue\/50 {
+    border-color: rgba(42, 96, 227, 0.5); 
+}
+
+/* --- ESTILOS MODERNOS PARA EL CARRUSEL DE LIDERAZGO --- */
+.carousel-slide {
+    width: 100%; /* Asegura que cada slide ocupe el 100% del contenedor */
+    /* Añadimos un poco más de estilo visual al slide */
+    box-sizing: border-box;
+}
+
+.carousel-nav-btn {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 20;
+    transition: all 0.3s ease;
+    opacity: 0; /* Inicialmente ocultos */
+}
+
+/* Mostrar botones al hacer hover sobre el contenedor principal */
+#carousel-container:hover .carousel-nav-btn {
+    opacity: 1;
+}
+
+.carousel-nav-btn:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Ajuste de posición para que no se pegue a los bordes */
+.carousel-nav-btn.absolute.left-0 {
+    left: -20px;
+}
+
+.carousel-nav-btn.absolute.right-0 {
+    right: -20px;
+}
+/* -------------------------------------------------------- */
+
+
+/* --- ESTILOS PARA EL SCROLL VERTICAL DE VIDEOS (Miniaturas) --- */
+#video-list-container {
+    /* Define la altura máxima para que se active el desplazamiento */
+    max-height: 400px; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+    padding-right: 8px;
+}
+
+/* Personalización de la barra de desplazamiento (solo para navegadores basados en WebKit como Chrome y Safari) */
+#video-list-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+#video-list-container::-webkit-scrollbar-thumb {
+    background-color: var(--pink-damas); /* Color de la "palanca" */
+    border-radius: 4px;
+}
+
+#video-list-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Color del fondo de la barra */
+    border-radius: 4px;
+}
+
+.video-list-item {
+    /* Añadimos estilos para la miniatura y el texto */
+    display: flex;
+    align-items: flex-start;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.video-list-item:hover {
+    background-color: var(--light-bg-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+.video-list-item img {
+    /* Estilo de la miniatura del video */
+    width: 80px; /* Ancho pequeño de la miniatura */
+    height: 45px; /* Altura para relación 16:9 */
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.video-list-item .video-info {
+    flex-grow: 1;
+    min-width: 0; /* Permite que el contenido se corte con 'line-clamp' */
+}
+
+.video-list-item .video-title {
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600; /* font-semibold */
+    color: #1f2937;   /* gray-900 */
+    line-height: 1.2;
+    
+    /* Propiedades para el Truncado de Texto (Clamp) */
+    overflow: hidden;
+    
+    /* Soporte para navegadores basados en WebKit (Chrome, Safari, Edge) */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Límite de 2 líneas */
+
+    /* Propiedad Estándar de CSS (Recomendado para el futuro) */
+    line-clamp: 2; /* Límite de 2 líneas */
+    
+    white-space: normal;
+}-------------------------------------------------------- */
+
+
+/* Efecto para el input de contraseña incorrecta */
+.animate-shake {
+    animation: shake 0.5s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+}
+@keyframes shake {
+    10%, 90% { transform: translate3d(-1px, 0, 0); }
+    20%, 80% { transform: translate3d(2px, 0, 0); }
+    30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+    40%, 60% { transform: translate3d(4px, 0, 0); }
+}
+
+/* Estilos para animaciones de la sección Hero */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out 0.2s backwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out 0.5s backwards;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out 0.8s backwards;
+}
+
+@keyframes bounceOnce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.animate-bounce-once {
+    animation: bounceOnce 1s ease-in-out 1s 1; /* Corre una sola vez */
+}
+
+/* Efecto de 'Glow' para las Cards */
+.glow-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glow-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del botón de peticiones con fondo de imagen */
+.button-with-image-bg {
+    /* La imagen debe estar cargada en la carpeta raíz (generaciones.jpg) */
+    background-image: url('generaciones.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* La transición del overlay se manejará con ::before */
+    position: relative; /* Esencial para el pseudo-elemento ::before */
+    color: white; /* Color del texto por defecto, para que se vea sobre el overlay */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* Sombra para mejor legibilidad */
+}
+
+/* Pseudo-elemento para el overlay de color sobre la imagen */
+.button-with-image-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Color de superposición: un tono de azul principal con opacidad */
+    background-color: rgba(var(--primary-blue-rgb), 0.7); /* Azul principal con 70% de opacidad */
+    z-index: 0; /* Asegura que el overlay esté debajo del texto */
+    transition: background-color 0.3s ease; /* Suave transición al pasar el ratón */
+    border-radius: 0.5rem; /* Hereda el border-radius del contenedor padre */
+}
+
+/* Efecto hover para el overlay */
+.button-with-image-bg:hover::before {
+    background-color: rgba(var(--primary-blue-rgb), 0.85); /* Se oscurece ligeramente al hacer hover */
+}
+
+/* CLASE PARA BOTONES DE REDES SOCIALES MODERNOS */
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* Añade un ligero escalado en hover para el efecto "moderno" */
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.social-btn:hover {
+    transform: scale(1.15);
+}
+
+/* --- Mejoras para Botones y Efectos --- */
+.glow-effect {
+    /* Brillo inicial sutil en el color amarillo (#F59E0B) */
+    box-shadow: 0 0 8px rgba(245, 158, 11, 0.7), 0 0 15px rgba(245, 158, 11, 0.4);
+}
+
+.glow-effect:hover {
+    /* Brillo más intenso al pasar el mouse */
+    box-shadow: 0 0 10px rgba(245, 158, 11, 0.9), 0 0 20px rgba(245, 158, 11, 0.6);
+}
+
+
+/* Efecto Parallax General */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Oscurecer un poco el fondo para que el texto sea legible */
+.parallax::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta este número para más o menos oscuridad */
+    z-index: 1;
+}
+
+/* El contenido debe ir encima de la capa oscura */
+.parallax > div {
+    position: relative;
+    z-index: 2;
+}
+
+/* IMÁGENES DIFERENTES POR SECCIÓN */
+.bg-inicio { background-image: url('foto7.jpeg'); }
+.bg-ministerios { background-image: url('foto2.jpeg'); }
+.bg-articulos { background-image: url('foto3.jpeg'); }
+.bg-mision { background-image: url('foto4.jpeg'); }
+.bg-liderazgo { background-image: url('foto5.jpeg'); }
+.bg-eventos { background-image: url('foto6.jpeg'); }
+.bg-servicios { background-image: url('foto6.jpeg'); }
+.bg-videos { background-image: url('foto3.jpeg'); }
+.bg-comunidad { background-image: url('foto2.jpeg'); }
+
+.boton-instalar {
+    background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3);
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.boton-instalar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(30, 64, 175, 0.4);
+}
+
+.boton-instalar i {
+    font-size: 1.1rem;
+}
+
+/* En móvil lo hacemos un poco más grande para que sea fácil de tocar */
+@media (max-width: 768px) {
+    .boton-instalar {
+        width: 80%;
+        justify-content: center;
+        padding: 15px;
+    }
+}

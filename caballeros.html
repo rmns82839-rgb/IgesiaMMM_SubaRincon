@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministerio de Caballeros | Iglesia MMM Suba Rincón</title>
+
+    <!-- SEO -->
+    <meta name="description" content="El Ministerio de Caballeros de la Iglesia MMM Suba Rincón: hombres de fe sirviendo a Dios, a la familia y a la comunidad en Bogotá.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://igesiammm-subarincon.netlify.app/caballeros.html">
+
+    <!-- Open Graph (WhatsApp, Facebook, Telegram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igesiammm-subarincon.netlify.app/caballeros.html">
+    <meta property="og:title" content="Ministerio de Caballeros | Iglesia MMM Suba Rincón">
+    <meta property="og:description" content="El Ministerio de Caballeros de la Iglesia MMM Suba Rincón: hombres de fe sirviendo a Dios, a la familia y a la comunidad en Bogotá.">
+    <meta property="og:image" content="https://igesiammm-subarincon.netlify.app/generaciones.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Iglesia MMM Suba Rincón">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ministerio de Caballeros | Iglesia MMM Suba Rincón">
+    <meta name="twitter:description" content="El Ministerio de Caballeros de la Iglesia MMM Suba Rincón: hombres de fe sirviendo a Dios, a la familia y a la comunidad en Bogotá.">
+    <meta name="twitter:image" content="https://igesiammm-subarincon.netlify.app/generaciones.jpg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900;1,400&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.5/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-blue': 'var(--accent-blue)',
+                        'accent-yellow': 'var(--accent-yellow)',
+                        'light-bg-blue': 'var(--light-bg-blue)',
+                        'youth-green': '#10b981', 
+                        'pink-damas': '#ec4899', 
+                        'caballeros-color': '#1E40AF' /* Azul Oscuro de Caballeros */
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Montserrat', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="min-h-screen font-sans bg-gray-50">
+
+    <nav id="navbar" class="bg-white sticky top-0 z-50 shadow-lg transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <a href="index.html" class="flex items-center flex-shrink-0">
+                    <img class="h-10 w-auto" src="logo.png" alt="Logo Iglesia Suba Rincón">
+                    <span class="text-xl sm:text-3xl font-serif font-black text-gray-800 tracking-wider ml-2 truncate">
+                        <span class="accent-blue">MMM SUBA RINCÓN</span>
+                    </span>
+                </a>
+                
+                <div class="hidden lg:flex lg:space-x-4 items-center h-full">
+                    <a href="index.html#inicio" class="nav-link text-gray-600 hover:text-gray-900 font-medium px-3 py-2 rounded-lg transition duration-150">Inicio</a>
+                    <a href="index.html#servicios" class="nav-link text-gray-600 hover:text-gray-900 font-medium px-3 py-2 rounded-lg transition duration-150">Servicios</a>
+                    <div class="relative inline-block text-left">
+                        <a href="#" class="inline-flex justify-center items-center px-3 py-2 text-sm font-bold text-white bg-caballeros-color rounded-full shadow-md transition duration-150 transform hover:scale-105 focus:outline-none">
+                            <i class="fas fa-shield-alt mr-1"></i> Caballeros
+                        </a>
+                    </div>
+                    <a href="damas.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium px-3 py-2 rounded-lg transition duration-150">Damas</a>
+                    <a href="jovenes.html" class="nav-link text-gray-600 hover:text-gray-900 font-medium px-3 py-2 rounded-lg transition duration-150">Jóvenes</a>
+                </div>
+                
+                <div class="lg:hidden flex items-center space-x-3">
+                    <button id="open-mobile-menu" class="text-gray-800 text-2xl p-1 rounded hover:bg-gray-100 transition">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        
+        <section id="caballeros-hero" class="relative min-h-[50vh] flex items-center justify-center text-white p-6" 
+            style="background-image: url('fortaleza.jpeg'); background-size: cover; background-position: center;">
+            
+            <div class="absolute inset-0 bg-caballeros-color bg-opacity-80"></div> 
+            
+            <div class="relative text-center max-w-4xl mx-auto py-12">
+                <i class="fas fa-shield-alt text-6xl sm:text-8xl text-accent-yellow mb-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);"></i>
+                <h1 class="text-4xl sm:text-6xl font-serif font-extrabold mb-2 leading-tight">
+                    Hombres de <span class="text-accent-yellow">Fortaleza y Fe</span>
+                </h1>
+                <p class="text-lg sm:text-xl font-medium max-w-2xl mx-auto">
+                    Edificando líderes, esposos y padres conforme al corazón de Dios.
+                </p>
+            </div>
+        </section>
+
+        <section id="liderazgo-caballeros" class="py-16 bg-white px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold uppercase tracking-wider text-caballeros-color">Nuestros Guías</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-gray-900 mt-2">Liderazgo del Ministerio</h2>
+            </div>
+
+            <div class="max-w-xl mx-auto bg-light-bg-blue p-8 rounded-xl shadow-2xl text-center border-t-4 border-caballeros-color">
+                <img loading="lazy" decoding="async" src="tesorero.jpg" alt="Líder de Caballeros" class="w-40 h-40 object-cover rounded-full mx-auto mb-4 border-4 border-accent-yellow shadow-lg">
+                <h3 class="text-2xl font-serif font-bold text-gray-900">Hno. [Nombre del Líder]</h3>
+                <p class="text-caballeros-color font-semibold mb-4">Coordinador General de Caballeros</p>
+                <p class="text-gray-700 italic">"Es un honor liderar a estos guerreros de la fe. Buscamos la santidad en cada paso que damos."</p>
+            </div>
+        </section>
+
+        <section id="actividades-caballeros" class="py-16 bg-light-bg-blue px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <span class="text-sm font-semibold uppercase tracking-wider text-caballeros-color">Comunión y Crecimiento</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-gray-900 mt-2">Pilares del Ministerio</h2>
+            </div>
+            
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-caballeros-color text-center">
+                    <i class="fas fa-church text-5xl text-caballeros-color mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Reuniones de Varones</h3>
+                    <p class="text-gray-700">Estudio profundo de la Palabra enfocado en el rol del hombre en el hogar y la iglesia. (Último Viernes de cada mes).</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-accent-yellow text-center">
+                    <i class="fas fa-mountain text-5xl text-accent-yellow mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Retiros de Varones</h3>
+                    <p class="text-gray-700">Tiempo de ayuno, oración y comunión intensa fuera de la ciudad para recargar la fuerza espiritual. (Anual).</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-caballeros-color text-center">
+                    <i class="fas fa-tools text-5xl text-caballeros-color mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Servicio y Mantenimiento</h3>
+                    <p class="text-gray-700">Organización y participación en el mantenimiento y embellecimiento del templo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="enlace-caballeros" class="py-12 bg-caballeros-color px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-2xl font-serif font-extrabold text-white mb-4">¡Únete a la Fraternidad!</h2>
+                <p class="text-lg text-white mb-6 max-w-xl mx-auto">
+                    Si eres un hombre comprometido con el Señor, te invitamos a ser parte de nuestro grupo.
+                </p>
+                <a href="#" target="_blank" class="inline-block px-8 py-3 text-lg font-bold text-caballeros-color bg-accent-yellow rounded-full shadow-2xl hover:bg-yellow-600 transition duration-300 transform hover:scale-105">
+                    Grupo de WhatsApp <i class="fab fa-whatsapp ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-gray-400">&copy; 2025 Iglesia MMM Suba Rincón. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    
+<script>
+// Registro del Service Worker para modo offline (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js')
+      .then(function(reg) {
+        console.log('[PWA] Service Worker registrado:', reg.scope);
+      })
+      .catch(function(err) {
+        console.warn('[PWA] Error al registrar SW:', err);
+      });
+  });
+}
+</script>
+</body>
+</html>

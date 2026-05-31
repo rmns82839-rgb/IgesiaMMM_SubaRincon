@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesia MMM Suba Rincón | Comunidad Cristiana en Bogotá</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Iglesia Cristiana MMM en el barrio Suba Rincón, Bogotá. Cultos dominicales, ministerios de jóvenes, damas, caballeros y niños. ¡Te esperamos!">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://igesiammm-subarincon.netlify.app/index.html">
+
+    <!-- Open Graph (WhatsApp, Facebook, Telegram) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://igesiammm-subarincon.netlify.app/index.html">
+    <meta property="og:title" content="Iglesia MMM Suba Rincón | Comunidad Cristiana en Bogotá">
+    <meta property="og:description" content="Iglesia Cristiana MMM en el barrio Suba Rincón, Bogotá. Cultos dominicales, ministerios de jóvenes, damas, caballeros y niños. ¡Te esperamos!">
+    <meta property="og:image" content="https://igesiammm-subarincon.netlify.app/foto7.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:site_name" content="Iglesia MMM Suba Rincón">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Iglesia MMM Suba Rincón | Comunidad Cristiana en Bogotá">
+    <meta name="twitter:description" content="Iglesia Cristiana MMM en el barrio Suba Rincón, Bogotá. Cultos dominicales, ministerios de jóvenes, damas, caballeros y niños. ¡Te esperamos!">
+    <meta name="twitter:image" content="https://igesiammm-subarincon.netlify.app/foto7.jpeg">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: una sola petición consolidada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&family=Playfair+Display:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    
+    <link href="styles.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" href="logo.png">
+
+<meta name="theme-color" content="#1E40AF">
+
+    <style>
+        :root {
+            --accent-blue: #1E40AF;
+            --accent-yellow: #FFD700;
+            --light-bg-blue: #EFF6FF;
+        }
+        
+        /* MEJORA: Asegurar que los iconos hereden la fuente de FontAwesome y no Arial */
+        .fas, .fa-solid, .fab, .fa {
+            font-family: "Font Awesome 6 Free" !important;
+            font-weight: 900;
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Animación suave para el navbar */
+        .nav-scrolled {
+            background-color: rgba(30, 64, 175, 0.98) !important;
+            backdrop-filter: blur(10px);
+            height: 70px !important;
+        }
+
+        .active-link {
+            position: relative;
+            color: #FFD700 !important;
+        }
+        
+        .active-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 3px;
+            background: #FFD700;
+            border-radius: 10px;
+        }
+
+        /* Corrección de transiciones */
+        #mobile-menu-drawer {
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-blue': '#1E40AF',
+                        'accent-yellow': '#FFD700',
+                        'light-bg-blue': '#EFF6FF',
+                        'caballeros-color': '#1E40AF',
+                        'pink-damas': '#ec4899',
+                        'jovenes-color': '#10b981',
+                        'ninos-color': '#F59E0B',
+                        'ujieres-color': '#9333ea',
+                        'evangelismo-color': '#DC2626',
+                        'actividades-color': '#f97316',
+                        'aseo-color': '#06b6d4',
+                        'multimedia-color': '#374151',
+                        'alabanza-color': '#E53E3E'
+                    },
+                    fontFamily: {
+                        sans: ['Arial', 'Helvetica', 'sans-serif'],
+                        serif: ['Arial', 'Helvetica', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-h-screen font-sans bg-gray-50">
+
+    <div id="mobile-menu-modal" class="fixed inset-0 bg-blue-950/40 backdrop-blur-sm z-[9998] hidden">
+        <div id="mobile-menu-drawer" class="fixed top-0 right-0 w-72 h-full bg-white shadow-2xl transform translate-x-full p-6 overflow-y-auto">
+            <div class="flex justify-between items-center mb-8 border-b pb-4">
+                <div class="flex items-center gap-2">
+                    <img src="logo.png" class="h-8" alt="Logo">
+                    <span class="text-lg font-bold text-accent-blue font-serif">MENÚ</span>
+                </div>
+                <button id="close-mobile-menu" class="text-gray-400 hover:text-red-500 transition-colors">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-2">
+                <a href="#inicio" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Inicio</a>
+                <a href="#servicios" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Servicios</a>
+                <a href="#ministerios" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Ministerios</a> 
+                <a href="#mision" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Misión</a>
+                <a href="#articulos" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Artículos</a>
+                <a href="#comunidad" class="mobile-nav-link p-3 rounded-xl text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition">Foro</a>
+                
+                <div class="pt-4 pb-2 text-xs font-black text-blue-300 uppercase tracking-widest">Ministerios y Equipos</div>
+
+                <a href="caballeros.html" class="flex items-center p-3 rounded-xl text-gray-600 hover:bg-blue-50 transition"><i class="fas fa-shield-alt w-8 text-caballeros-color"></i> Caballeros</a>
+                <a href="damas.html" class="flex items-center p-3 rounded-xl text-gray-600 hover:bg-blue-50 transition"><i class="fas fa-ring w-8 text-pink-damas"></i> Damas</a>
+                <a href="jovenes.html" class="flex items-center p-3 rounded-xl text-gray-600 hover:bg-blue-50 transition"><i class="fas fa-bolt w-8 text-jovenes-color"></i> Jóvenes</a>
+                <a href="ujieres.html" class="flex items-center p-3 rounded-xl text-gray-600 hover:bg-blue-50 transition"><i class="fas fa-handshake w-8 text-ujieres-color"></i> Ujieres</a>
+                <a href="evangelismo.html" class="flex items-center p-3 rounded-xl text-gray-600 hover:bg-blue-50 transition"><i class="fas fa-cross w-8 text-evangelismo-color"></i> Evangelismo</a>
+
+                <hr class="my-4 border-gray-100">
+                <a id="peticiones-nav-link-mobile" href="https://forms.gle/s53rJag1vfQ6rL2A6" target="_blank" class="flex items-center justify-center gap-2 p-4 font-black text-white bg-green-500 rounded-2xl shadow-lg shadow-green-200">
+                    <i class="fas fa-hand-holding-heart"></i> PETICIONES
+                </a>
+            </nav>
+        </div>
+    </div>
+    
+    <nav id="navbar" class="bg-accent-blue sticky top-0 z-50 shadow-2xl transition-all duration-300 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20 transition-all duration-300" id="navbar-content">
+            <a href="#inicio" class="flex items-center group">
+                <div class="bg-white w-12 h-12 flex items-center justify-center rounded-full shadow-inner group-hover:scale-110 transition-transform overflow-hidden border-2 border-white">
+                    <img class="h-10 w-10 object-contain" src="logo.png" alt="Logo">
+                </div>
+                
+                <span class="text-xl sm:text-2xl font-serif font-black text-white tracking-tighter ml-3 uppercase">
+                    <span class="font-light opacity-80">IGLESIA MMM</span> SUBA RINCÓN
+                </span>
+            </a>
+        
+                
+                <div class="hidden lg:flex lg:space-x-1 items-center">
+                    <a href="#inicio" class="text-white/90 hover:text-accent-yellow font-bold px-4 py-2 rounded-xl transition-all text-sm uppercase tracking-wider" data-section="inicio">Inicio</a>
+                    <a href="#servicios" class="text-white/90 hover:text-accent-yellow font-bold px-4 py-2 rounded-xl transition-all text-sm uppercase tracking-wider" data-section="servicios">Servicios</a>
+                    <a href="#ministerios" class="text-white/90 hover:text-accent-yellow font-bold px-4 py-2 rounded-xl transition-all text-sm uppercase tracking-wider" data-section="ministerios">Ministerios</a> 
+                    <a href="#videos" class="text-white/90 hover:text-accent-yellow font-bold px-4 py-2 rounded-xl transition-all text-sm uppercase tracking-wider" data-section="videos">Videos</a>
+
+                    <div class="w-px h-6 bg-white/20 mx-3"></div>
+                    
+                    <div class="flex items-center space-x-3">
+                        <div class="relative inline-block text-left" id="mas-dropdown-container">
+                            <button type="button" class="inline-flex justify-center items-center px-5 py-2.5 text-sm font-black text-accent-blue bg-white rounded-full shadow-xl hover:bg-accent-yellow transition-all transform hover:scale-105" id="mas-dropdown-button">
+                                <i class="fas fa-grid-2 mr-2"></i> EXPLORAR
+                                <i class="fas fa-chevron-down ml-2 text-[10px]"></i>
+                            </button>
+
+                            <div class="origin-top-right absolute right-0 mt-3 w-64 rounded-2xl shadow-2xl bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden overflow-hidden" id="mas-dropdown-menu">
+                                <div class="py-2">
+                                    <div class="px-4 py-2 text-[10px] text-gray-400 uppercase font-black tracking-widest">Contenido</div>
+                                    <a href="#mision" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition border-l-4 border-transparent hover:border-accent-blue">
+                                        <i class="fas fa-flag w-6 opacity-50"></i> Misión
+                                    </a>
+                                    <a href="#articulos" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition border-l-4 border-transparent hover:border-accent-blue">
+                                        <i class="fas fa-file-alt w-6 opacity-50"></i> Artículos
+                                    </a>
+                                    <a href="#comunidad" class="flex items-center px-4 py-3 text-sm text-gray-700 hover:bg-blue-50 hover:text-accent-blue font-bold transition border-l-4 border-transparent hover:border-accent-blue">
+                                        <i class="fas fa-comments w-6 opacity-50"></i> Foro de Bendición
+                                    </a>
+                                    
+                                    <div class="px-4 py-2 mt-2 text-[10px] text-gray-400 uppercase font-black tracking-widest border-t border-gray-50">Grupos</div>
+                                    <div class="grid grid-cols-1">
+                                        <a href="caballeros.html" class="px-4 py-2 text-sm text-gray-600 hover:text-caballeros-color font-semibold transition flex items-center gap-2"><i class="fas fa-shield-alt text-xs"></i> Caballeros</a>
+                                        <a href="damas.html" class="px-4 py-2 text-sm text-gray-600 hover:text-pink-damas font-semibold transition flex items-center gap-2"><i class="fas fa-ring text-xs"></i> Damas</a>
+                                        <a href="jovenes.html" class="px-4 py-2 text-sm text-gray-600 hover:text-jovenes-color font-semibold transition flex items-center gap-2"><i class="fas fa-bolt text-xs"></i> Jóvenes</a>
+                                    </div>
+                                    
+                                    <div class="p-3 bg-gray-50 mt-2">
+                                        <a href="multimedia.html" class="flex items-center justify-center gap-2 py-2 text-xs font-bold text-gray-500 hover:text-accent-blue transition">
+                                            <i class="fas fa-video"></i> Multimedia & Transmisiones
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a id="peticiones-nav-link" href="https://forms.gle/s53rJag1vfQ6rL2A6" target="_blank" class="px-5 py-2.5 text-sm font-black text-white bg-green-500 rounded-full shadow-lg shadow-green-900/20 hover:bg-green-600 transition-all transform hover:scale-105 active:scale-95">
+                            <i class="fas fa-heart mr-2"></i> PETICIONES
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex items-center">
+                    <button id="open-mobile-menu" class="text-white text-3xl p-2 rounded-xl bg-white/10 hover:bg-white/20 transition-all">
+                        <i class="fas fa-bars-staggered"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Lógica del Navbar y Dropdown
+        const navbar = document.getElementById('navbar');
+        const masBtn = document.getElementById('mas-dropdown-button');
+        const masMenu = document.getElementById('mas-dropdown-menu');
+        const mobileModal = document.getElementById('mobile-menu-modal');
+        const mobileDrawer = document.getElementById('mobile-menu-drawer');
+        const openBtn = document.getElementById('open-mobile-menu');
+        const closeBtn = document.getElementById('close-mobile-menu');
+
+        // Toggle Dropdown "Más"
+        masBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            masMenu.classList.toggle('hidden');
+        });
+
+        document.addEventListener('click', () => masMenu.classList.add('hidden'));
+
+        // Mobile Menu Logic
+        openBtn.addEventListener('click', () => {
+            mobileModal.classList.remove('hidden');
+            setTimeout(() => mobileDrawer.classList.remove('translate-x-full'), 10);
+        });
+
+        const closeMobile = () => {
+            mobileDrawer.classList.add('translate-x-full');
+            setTimeout(() => mobileModal.classList.add('hidden'), 400);
+        };
+
+        closeBtn.addEventListener('click', closeMobile);
+        mobileModal.addEventListener('click', (e) => {
+            if(e.target === mobileModal) closeMobile();
+        });
+
+        // Efecto Scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-scrolled');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+            }
+        });
+    </script>
+    <main>
+
+       
+
+<style>
+    /* MEJORA C: Animación de entrada "Soft" */
+    @keyframes softFadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animacion-soft {
+        animation: softFadeIn 1s ease-out forwards;
+    }
+
+    /* MEJORA A: Efecto Cristal (Backdrop Blur) */
+    .glass-effect {
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        background-color: rgba(15, 23, 42, 0.85); /* Slate-900 con transparencia */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .glass-social {
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    }
+</style>
+
+<section id="inicio" class="relative w-full h-[90vh] overflow-hidden flex items-center justify-end bg-slate-50">
+    
+    <div id="capaFondo" class="absolute inset-0 z-1" 
+         style="background-image: url('foto7.jpeg'); 
+                background-size: cover; 
+                background-position: 25% center; 
+                will-change: transform;
+                image-rendering: high-quality;
+                transition: transform 0.1s ease-out;">
+    </div>
+    
+    <div class="absolute inset-0 z-2 bg-gradient-to-t from-slate-50 via-slate-50/10 to-transparent md:bg-gradient-to-l md:from-slate-50 md:via-slate-50/40 md:to-transparent"></div>
+
+    <div class="relative z-10 w-full max-w-5xl mx-auto px-6 flex flex-col items-center md:items-end text-center md:text-right animacion-soft">
+        
+        <h2 class="text-blue-700 font-black italic uppercase tracking-tighter leading-none mb-1" 
+            style="font-family: 'Playfair Display', serif; font-size: clamp(1.2rem, 5vw, 3.2rem);">
+            ESTUDIO BÍBLICO
+        </h2>
+
+        <h1 class="font-black text-slate-800 leading-tight mb-3" 
+            style="font-family: 'Montserrat', sans-serif; font-size: clamp(0.9rem, 3.5vw, 2.2rem);">
+            IGLESIA MMM <br>
+            <span class="text-blue-600">SUBA RINCÓN</span>
+        </h1>
+
+        <div class="flex flex-wrap justify-center md:justify-end items-center gap-2 mb-4">
+            <div class="flex gap-1.5">
+                <a href="https://facebook.com/mmmsubarincon" target="_blank" 
+                   class="w-7 h-7 bg-blue-800/90 glass-social text-white rounded-full flex items-center justify-center hover:scale-125 hover:bg-blue-600 transition-all duration-300 shadow-md">
+                    <i class="fab fa-facebook-f text-[10px]"></i>
+                </a>
+                <a href="https://youtube.com/@mmmsubarincon" target="_blank" 
+                   class="w-7 h-7 bg-red-600/90 glass-social text-white rounded-full flex items-center justify-center hover:scale-125 hover:bg-red-500 transition-all duration-300 shadow-md">
+                    <i class="fab fa-youtube text-[10px]"></i>
+                </a>
+                <a href="https://tiktok.com/@iglesiammmsubarincon" target="_blank" 
+                   class="w-7 h-7 bg-black/90 glass-social text-white rounded-full flex items-center justify-center hover:scale-125 hover:bg-slate-800 transition-all duration-300 shadow-md">
+                    <i class="fab fa-tiktok text-[10px]"></i>
+                </a>
+            </div>
+            <div class="bg-red-600 text-white px-2 py-0.5 rounded-full flex items-center gap-1.5 font-bold text-[8px] md:text-[9px] uppercase tracking-widest animate-pulse shadow-sm">
+                <span class="w-1 h-1 bg-white rounded-full"></span> EN VIVO
+            </div>
+        </div>
+
+        <div class="border-b-2 md:border-b-0 md:border-r-2 border-blue-600 pb-1 md:pb-0 md:pr-3 mb-5">
+            <p class="text-red-600 font-black text-[8px] tracking-[0.15em] uppercase">Pastores:</p>
+            <h3 class="font-serif italic text-slate-700 leading-tight" 
+                style="font-family: 'Playfair Display', serif; font-size: clamp(0.8rem, 2.5vw, 1.4rem);">
+                Juan David Ramirez & <br class="hidden md:block"> Lizeth Jurado
+            </h3>
+        </div>
+
+        <div id="contenedor-instalar">
+            <button id="btnInstalar" 
+                    class="px-4 py-2 glass-effect text-white font-bold rounded-lg shadow-lg hover:bg-blue-700 hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                <i class="fas fa-download text-[9px] animate-bounce"></i>
+                <span class="text-[9px] md:text-[11px] uppercase tracking-tight">Descargar App</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Parallax mantenido exactamente igual
+    const fondo = document.getElementById('capaFondo');
+    let lastScrollY = window.pageYOffset;
+    let ticking = false;
+
+    function updateParallax() {
+        const speed = window.innerWidth < 768 ? 0.12 : 0.35;
+        fondo.style.transform = `translate3d(0, ${lastScrollY * speed}px, 0)`;
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        lastScrollY = window.pageYOffset;
+        if (!ticking) {
+            window.requestAnimationFrame(updateParallax);
+            ticking = true;
+        }
+    });
+
+    // PWA Logic Original
+    let pwaPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        pwaPrompt = e;
+    });
+
+    document.getElementById('btnInstalar').addEventListener('click', async () => {
+        if (pwaPrompt) {
+            pwaPrompt.prompt();
+            const { outcome } = await pwaPrompt.userChoice;
+            if (outcome === 'accepted') pwaPrompt = null;
+        } else {
+            alert("Usa el menú de tu navegador y elige 'Añadir a pantalla de inicio'.");
+        }
+    });
+</script>
+
+
+    
+    <section id="servicios" class="relative py-24 px-4 sm:px-6 lg:px-8 flex items-center justify-center text-white" 
+    data-bg="foto6.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full">
+        <div class="text-center mb-12">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent-yellow">Nuestros Horarios</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-2">
+                Servicios <span class="text-accent-yellow">Semanales</span>
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="bg-white rounded-xl shadow-lg border-t-4 border-accent-blue hover:shadow-2xl transition duration-300 overflow-hidden transform hover:-translate-y-2 flex flex-col">
+                <img loading="lazy" decoding="async" src="generaciones.jpg" alt="Escuela Dominical" class="w-full h-32 object-cover">
+                
+                <div class="p-6 flex-grow">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-blue-100 p-2 rounded-lg">
+                            <i class="fas fa-bible text-2xl text-accent-blue"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 tracking-tight">Escuela Dominical</h3>
+                    </div>
+
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">
+                        Un espacio dedicado al estudio profundo de las Escrituras para todas las edades, fortaleciendo los fundamentos bíblicos de cada familia.
+                    </p>
+
+                    <div class="mb-4">
+                        <p class="text-gray-500 text-xs uppercase font-black tracking-widest">Horario</p>
+                        <div class="flex items-baseline space-x-2">
+                            <span class="text-gray-700 font-bold">Domingos</span>
+                            <span class="text-2xl font-black text-accent-blue">9:00 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 border-t border-gray-100">
+                        <div class="flex items-start space-x-2 text-gray-600">
+                            <i class="fas fa-map-marker-alt mt-1 text-red-500"></i>
+                            <p class="text-xs font-medium">
+                                Calle [Tu Dirección Aquí]<br>
+                                Suba Rincón, Bogotá
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="px-6 pb-6">
+                    <button onclick="toggleAccordion('accordion-estudios')" class="flex items-center justify-between w-full py-2 px-4 bg-gray-100 text-accent-blue text-xs font-bold rounded-lg hover:bg-accent-blue hover:text-white transition-all duration-200">
+                        <span>VER CLASES ANTERIORES</span>
+                        <i id="icon-accordion-estudios" class="fas fa-chevron-down transition-transform"></i>
+                    </button>
+
+                    <div id="accordion-estudios" class="hidden mt-3 border border-gray-100 rounded-lg bg-gray-50 overflow-hidden">
+                        <div class="max-h-48 overflow-y-auto p-2 space-y-2 custom-scrollbar" id="dominical-video-list">
+                            </div>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </div>
+</section>
+
+<style>
+    /* Estilo para el scroll del acordeón */
+    .custom-scrollbar::-webkit-scrollbar {
+        width: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #1E40AF;
+        border-radius: 10px;
+    }
+    /* Rotación del icono al abrir */
+    .rotate-180 {
+        transform: rotate(180deg);
+    }
+</style>
+
+<script>
+// Función para abrir/cerrar el acordeón
+function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    const icon = document.getElementById('icon-' + id);
+    content.classList.toggle('hidden');
+    icon.classList.toggle('rotate-180');
+    
+    // Si se abre, cargamos los videos si no están cargados
+    if(!content.classList.contains('hidden')) {
+        renderDominicalVideos();
+    }
+}
+
+// Función para mostrar los videos del script.js dentro del acordeón
+function renderDominicalVideos() {
+    const container = document.getElementById('dominical-video-list');
+    if (!container || container.innerHTML.trim() !== "") return;
+
+    // Usamos los mismos datos que tienes en VIDEOS_DATA
+    container.innerHTML = VIDEOS_DATA.map(video => `
+        <a href="https://www.youtube.com/watch?v=${video.id}" target="_blank" 
+           class="flex items-center p-2 bg-white rounded border border-gray-100 hover:border-accent-blue transition-colors group">
+            <div class="relative flex-shrink-0 w-12 h-8 mr-3">
+                <img loading="lazy" decoding="async" src="https://img.youtube.com/vi/${video.id}/default.jpg" class="w-full h-full object-cover rounded shadow-xs">
+                <i class="fas fa-play absolute inset-0 flex items-center justify-center text-[10px] text-white opacity-0 group-hover:opacity-100 bg-black/40 transition"></i>
+            </div>
+            <p class="text-[10px] font-bold text-gray-700 leading-tight group-hover:text-accent-blue transition-colors truncate">
+                ${video.title}
+            </p>
+        </a>
+    `).join('');
+}
+</script>
+
+               
+<style>
+    :root {
+        --caballeros-color: #1e40af; /* Azul */
+        --damas-color: #be185d;      /* Rosa/Vino */
+        --jovenes-color: #f59e0b;     /* Ámbar/Naranja */
+        --evangelismo-color: #15803d; /* Verde */
+        --ujieres-color: #4338ca;     /* Índigo */
+        --alabanza-color: #6d28d9;    /* Violeta */
+        --accent-yellow: #fbbf24;
+    }
+    .text-caballeros-color { color: var(--caballeros-color); }
+    .border-caballeros-color { border-color: var(--caballeros-color); }
+    
+    .text-damas-color { color: var(--damas-color); }
+    .border-damas-color { border-color: var(--damas-color); }
+    
+    .text-jovenes-color { color: var(--jovenes-color); }
+    .border-jovenes-color { border-color: var(--jovenes-color); }
+
+    .text-evangelismo-color { color: var(--evangelismo-color); }
+    .border-evangelismo-color { border-color: var(--evangelismo-color); }
+
+    .text-ujieres-color { color: var(--ujieres-color); }
+    .border-ujieres-color { border-color: var(--ujieres-color); }
+
+    .text-alabanza-color { color: var(--alabanza-color); }
+    .border-alabanza-color { border-color: var(--alabanza-color); }
+</style>
+
+<section id="ministerios" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" 
+    data-bg="foto2.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-80"></div> 
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-2">
+                 Ministerios y Equipos
+            </h2>
+            <p class="text-lg text-gray-200 mt-4 max-w-4xl mx-auto">
+                Te invitamos a descubrir el propósito que Dios tiene para tu vida dentro de nuestra comunidad. En la Iglesia MMM Suba Rincón, 
+                creemos que cada talento es un regalo divino destinado a bendecir a otros. 
+                Encuentra tu lugar de servicio y crecimiento en nuestra iglesia, participando activamente en nuestros grupos y ministerios.
+                 Aquí no solo desarrollarás tus dones espirituales, 
+                sino que también caminarás junto a una familia que te apoya en tu madurez cristiana y fortalecimiento espiritual.
+            </p>
+        </div>
+
+        <h3 class="text-2xl font-serif font-bold text-yellow-400 border-l-4 border-yellow-400 pl-4 mb-8">
+    <i class="fas fa-users-line mr-2"></i> Grupos de Crecimiento
+</h3>
+
+<div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+    <a href="caballeros.html" class="group block p-6 bg-white/30 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border-b-4 border-caballeros-color border-t border-white/20">
+        <div class="text-center">
+            <img loading="lazy" decoding="async" src="generaciones.jpg" alt="Líder Caballeros" class="w-20 h-20 object-cover rounded-full mx-auto mb-3 border-4 border-caballeros-color group-hover:border-yellow-400 transition duration-300">
+            <h4 class="text-xl font-serif font-bold text-gray-900 mb-1 group-hover:text-blue-800 transition">Caballeros</h4>
+            <p class="text-sm text-gray-800 font-medium italic">Líderes de fe y familia.</p>
+        </div>
+    </a>
+
+    <a href="damas.html" class="group block p-6 bg-white/30 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border-b-4 border-damas-color border-t border-white/20">
+        <div class="text-center">
+            <img loading="lazy" decoding="async" src="foto4.jpeg" alt="Líder Damas" class="w-20 h-20 object-cover rounded-full mx-auto mb-3 border-4 border-damas-color group-hover:border-yellow-400 transition duration-300">
+            <h4 class="text-xl font-serif font-bold text-gray-900 mb-1 group-hover:text-pink-800 transition">Damas</h4>
+            <p class="text-sm text-gray-800 font-medium italic">Mujeres virtuosas en oración.</p>
+        </div>
+    </a>
+
+    <a href="jovenes.html" class="group block p-6 bg-white/30 backdrop-blur-lg rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 border-b-4 border-jovenes-color border-t border-white/20">
+        <div class="text-center">
+            <img loading="lazy" decoding="async" src="foto3.jpeg" alt="Líder Jóvenes" class="w-20 h-20 object-cover rounded-full mx-auto mb-3 border-4 border-jovenes-color group-hover:border-yellow-400 transition duration-300">
+            <h4 class="text-xl font-serif font-bold text-gray-900 mb-1 group-hover:text-amber-700 transition">Jóvenes</h4>
+            <p class="text-sm text-gray-800 font-medium italic">Juventud con propósito.</p>
+        </div>
+    </a>
+</div>
+
+<h3 class="text-2xl font-serif font-bold text-yellow-400 border-l-4 border-yellow-400 pl-4 mb-8">
+    <i class="fas fa-handshake-angle mr-2"></i> Equipos de Servicio
+</h3>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-16">
+    <a href="evangelismo.html" class="group block p-6 bg-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/20 transition duration-300 border-l-4 border-evangelismo-color">
+        <div class="flex flex-col items-center">
+            <img loading="lazy" decoding="async" src="foto2.jpeg" alt="Equipo Evangelismo" class="w-16 h-16 object-cover rounded-full mb-3 border-2 border-white/50 group-hover:scale-110 transition shadow-lg">
+            <h4 class="text-lg font-bold text-white mb-1">Evangelismo</h4>
+            <p class="text-xs text-gray-300 text-center">Mensaje de salvación.</p>
+        </div>
+    </a>
+
+    <a href="ujieres.html" class="group block p-6 bg-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/20 transition duration-300 border-l-4 border-ujieres-color">
+        <div class="flex flex-col items-center">
+            <img loading="lazy" decoding="async" src="foto1.jpeg" alt="Equipo Ujieres" class="w-16 h-16 object-cover rounded-full mb-3 border-2 border-white/50 group-hover:scale-110 transition shadow-lg">
+            <h4 class="text-lg font-bold text-white mb-1">Ujieres</h4>
+            <p class="text-xs text-gray-300 text-center">Servicio con amor.</p>
+        </div>
+    </a>
+
+    <a href="alabanza.html" class="group block p-6 bg-white/10 backdrop-blur-md rounded-xl shadow-lg hover:bg-white/20 transition duration-300 border-l-4 border-alabanza-color">
+        <div class="flex flex-col items-center">
+            <img loading="lazy" decoding="async" src="foto5.jpeg" alt="Equipo Alabanza" class="w-16 h-16 object-cover rounded-full mb-3 border-2 border-white/50 group-hover:scale-110 transition shadow-lg">
+            <h4 class="text-lg font-bold text-white mb-1">Alabanza</h4>
+            <p class="text-xs text-gray-300 text-center">Adoración en verdad.</p>
+        </div>
+    </a>
+</div>
+</section>
+    
+<section id="mision" class="relative py-24 px-4 sm:px-6 lg:px-8 flex items-center" 
+    data-bg="foto4.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full lg:grid lg:grid-cols-3 lg:gap-8 items-center">
+        <div class="lg:col-span-1 mb-8 lg:mb-0">
+            <h2 class="text-3xl font-serif font-extrabold text-white border-l-4 border-yellow-400 pl-4">
+                Nuestra Misión
+            </h2>
+        </div>
+        <div class="lg:col-span-2 space-y-4 text-xl text-gray-100">
+            <p class="leading-relaxed" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                Somos la iglesia del Movimiento Misionero Mundial en Suba Rincón, comprometidos con la Gran Comisión. 
+                Nuestra misión es predicar el evangelio, discipular a los creyentes y servir a la comunidad con amor y fe.
+            </p>
+            <p class="font-bold text-yellow-400 text-2xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+                Familia, Fe y Evangelización son nuestros pilares.
+            </p>
+        </div>
+    </div>
+</section>
+       
+   
+<section id="liderazgo" class="relative py-24 px-4 overflow-hidden" 
+    data-bg="foto5.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-blue-900/80 backdrop-blur-sm"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <span class="text-sm font-bold uppercase tracking-[0.3em] text-[#FFD700] drop-shadow-md">Guías Espirituales</span>
+            <h2 class="text-4xl md:text-5xl font-serif font-extrabold text-white mt-2">Liderazgo General</h2>
+            <div class="w-24 h-1 bg-[#FFD700] mx-auto mt-4 rounded-full"></div>
+        </div>
+        
+        <div class="carousel-3d-wrapper">
+            <button onclick="moverSlider(-1)" class="nav-btn-3d left" aria-label="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div id="carousel-stack" class="carousel-stack">
+                <div class="card-3d">
+                    <div class="card-inner">
+                        <img loading="lazy" decoding="async" src="foto7.jpeg" alt="Pastor Principal">
+                        <div class="card-content">
+                            <h4>Rev. Pastor Principal</h4>
+                            <p class="role">Pastor General</p>
+                            <p class="desc text-gray-500 text-xs italic">"Dirigiendo la visión y el crecimiento espiritual con sabiduría bíblica."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d">
+                    <div class="card-inner">
+                        <img loading="lazy" decoding="async" src="jesus_salva.jpg" alt="Pastora Apoyo">
+                        <div class="card-content">
+                            <h4>Nombre de la Pastora</h4>
+                            <p class="role" style="color: #ec4899;">Líder de Apoyo</p>
+                            <p class="desc text-gray-500 text-xs italic">"Enfocada en la administración y el bienestar de los ministerios internos."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-3d">
+                    <div class="card-inner">
+                        <img loading="lazy" decoding="async" src="fortaleza.jpeg" alt="Líder de Zona">
+                        <div class="card-content">
+                            <h4>Cuerpo de Diáconos</h4>
+                            <p class="role">Servicio y Apoyo</p>
+                            <p class="desc text-gray-500 text-xs italic">"Comprometidos con el servicio constante a la congregación y la obra."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="moverSlider(1)" class="nav-btn-3d right" aria-label="Siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div id="dots-3d" class="flex justify-center mt-12 gap-3"></div>
+    </div>
+</section>
+
+<style>
+/* Contenedor principal con perspectiva */
+.carousel-3d-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    height: 520px;
+    perspective: 1500px;
+}
+
+.carousel-stack {
+    position: relative;
+    width: 320px;
+    height: 480px;
+    transform-style: preserve-3d;
+}
+
+.card-3d {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.7s cubic-bezier(0.34, 1.56, 0.64, 1);
+    border-radius: 25px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.card-inner {
+    background: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-inner img {
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    border-bottom: 4px solid #f1f5f9;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    background: white;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h4 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; color: #1e293b; margin: 0; }
+.card-content .role { font-size: 0.8rem; font-weight: 700; color: #1E40AF; text-transform: uppercase; margin: 8px 0; letter-spacing: 1px; }
+
+/* LOGICA DE POSICIONES 3D */
+.card-3d.active {
+    transform: translate3d(0, 0, 200px);
+    opacity: 1;
+    z-index: 10;
+    pointer-events: auto;
+}
+
+.card-3d.prev {
+    transform: translate3d(-220px, 0, -100px) rotateY(30deg);
+    opacity: 0.4;
+    z-index: 5;
+    filter: grayscale(100%);
+}
+
+.card-3d.next {
+    transform: translate3d(220px, 0, -100px) rotateY(-30deg);
+    opacity: 0.4;
+    z-index: 5;
+    filter: grayscale(100%);
+}
+
+/* Botones Navegación */
+.nav-btn-3d {
+    background: white;
+    color: #1E40AF;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    z-index: 50;
+}
+
+/* CORREGIDO: Error de color corregido a Hexadecimal */
+.nav-btn-3d:hover { 
+    background-color: #FFD700; 
+    color: #1e293b;
+    transform: scale(1.15); 
+}
+
+/* Puntitos */
+.dot-3d { width: 12px; height: 12px; background: rgba(255,255,255,0.2); border-radius: 50%; cursor: pointer; transition: 0.4s; }
+.dot-3d.active { background-color: #FFD700; width: 35px; border-radius: 10px; }
+
+@media (max-width: 850px) {
+    .card-3d.prev, .card-3d.next { opacity: 0; transform: scale(0.5); }
+    .carousel-stack { width: 300px; }
+}
+</style>
+
+<script>
+let liderActual = 0;
+const tarjetas = document.querySelectorAll('.card-3d');
+const contenedorDots = document.getElementById('dots-3d');
+
+// Crear los puntitos dinámicamente
+tarjetas.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = `dot-3d ${i === 0 ? 'active' : ''}`;
+    dot.onclick = () => irALider(i);
+    contenedorDots.appendChild(dot);
+});
+
+function actualizarLiderazgo() {
+    const dots = document.querySelectorAll('.dot-3d');
+    tarjetas.forEach((t, i) => {
+        t.classList.remove('active', 'prev', 'next');
+        dots[i].classList.remove('active');
+        
+        if (i === liderActual) {
+            t.classList.add('active');
+            dots[i].classList.add('active');
+        } else if (i === (liderActual - 1 + tarjetas.length) % tarjetas.length) {
+            t.classList.add('prev');
+        } else if (i === (liderActual + 1) % tarjetas.length) {
+            t.classList.add('next');
+        }
+    });
+}
+
+function moverSlider(direccion) {
+    liderActual = (liderActual + direccion + tarjetas.length) % tarjetas.length;
+    actualizarLiderazgo();
+}
+
+function irALider(indice) {
+    liderActual = indice;
+    actualizarLiderazgo();
+}
+
+// Inicialización
+actualizarLiderazgo();
+
+// Cambio automático cada 6 segundos
+let autoSlide = setInterval(() => moverSlider(1), 6000);
+
+// Soporte táctil (swipe) para móviles
+(function() {
+    const stack = document.getElementById('carousel-stack');
+    if (!stack) return;
+
+    let touchStartX = 0;
+    let touchStartY = 0;
+
+    stack.addEventListener('touchstart', function(e) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+
+    stack.addEventListener('touchend', function(e) {
+        const dx = e.changedTouches[0].clientX - touchStartX;
+        const dy = e.changedTouches[0].clientY - touchStartY;
+
+        // Solo activar si el deslizamiento es más horizontal que vertical
+        if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) {
+            clearInterval(autoSlide);
+            moverSlider(dx < 0 ? 1 : -1);
+            // Reiniciar el auto-avance tras interacción manual
+            autoSlide = setInterval(() => moverSlider(1), 6000);
+        }
+    }, { passive: true });
+
+    // Pausar auto-avance al hacer hover (escritorio)
+    stack.addEventListener('mouseenter', () => clearInterval(autoSlide));
+    stack.addEventListener('mouseleave', () => {
+        autoSlide = setInterval(() => moverSlider(1), 6000);
+    });
+})();
+</script>
+
+
+
+<section id="eventos" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" 
+    data-bg="foto6.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-75"></div>
+
+    <div class="relative z-10">
+        <div class="text-center mb-12">
+            
+            <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-2">Eventos Realizados</h2>
+        </div>
+
+        <div id="events-container" class="space-y-8 max-w-4xl mx-auto">
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-accent-blue flex items-center space-x-6 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                <div class="flex-shrink-0 text-center border-r pr-6 border-gray-100">
+                    <p class="text-4xl font-extrabold text-accent-blue">25</p>
+                    <p class="text-sm font-bold text-gray-500 uppercase">Dic</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold text-gray-900">Cena de Navidad Familiar</h3>
+                    <p class="text-gray-700 text-sm mt-1">Celebra el nacimiento de Jesús con toda la familia de la iglesia. <strong class="text-accent-blue">7:00 PM</strong></p>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-actividades-color flex items-center space-x-6 hover:shadow-2xl transition duration-300 transform hover:scale-[1.02]">
+                <div class="flex-shrink-0 text-center border-r pr-6 border-gray-100">
+                    <p class="text-4xl font-extrabold text-actividades-color">31</p>
+                    <p class="text-sm font-bold text-gray-500 uppercase">Dic</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-serif font-bold text-gray-900">Culto de Fin de Año y Vigilia</h3>
+                    <p class="text-gray-700 text-sm mt-1">Despide el año en oración y alabanza. <strong class="text-actividades-color">10:00 PM - 12:00 AM</strong></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+
+<section id="articulos" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" 
+    data-bg="foto3.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-slate-900 bg-opacity-80"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent-yellow">Estudio de la Palabra</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-2">Artículos Destacados</h2>
+        </div>
+        
+        <div id="articulos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col glow-effect border-t-4 border-accent-blue transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img loading="lazy" decoding="async" src="fortaleza.jpeg" alt="Imagen del Artículo 1" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">La Fortaleza del Cristiano</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Un análisis bíblico sobre cómo edificar una vida espiritual sólida, resistiendo las pruebas y manteniendo la fe inquebrantable.</p>
+                    <div class="mt-auto text-center">
+                        <a href="https://www.indubiblia.org/antiguo-testamento-1/genesis-1" target="_blank" class="inline-block px-6 py-2 text-sm font-semibold text-white bg-accent-blue rounded-full hover:bg-blue-800 transition shadow-md">Leer más <i class="fas fa-book-open ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col glow-effect border-t-4 border-pink-damas transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img loading="lazy" decoding="async" src="generaciones.jpg" alt="Imagen del Artículo 2" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">El Legado de Fe a la Familia</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">La importancia de modelar un carácter piadoso para que nuestros hijos y jóvenes sigan el camino del Señor con convicción.</p>
+                    <div class="mt-auto text-center">
+                        <a href="#" target="_blank" class="inline-block px-6 py-2 text-sm font-semibold text-white bg-pink-damas rounded-full hover:bg-pink-600 transition shadow-md">Leer más <i class="fas fa-book-open ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col glow-effect border-t-4 border-evangelismo-color transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img loading="lazy" decoding="async" src="jesus_salva.jpg" alt="Imagen del Artículo 3" class="w-full h-48 object-cover">
+                <div class="p-6 flex-grow flex flex-col">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">El Llamado al Servicio Misionero</h3>
+                    <p class="text-gray-600 text-sm mb-4 flex-grow">Reflexión sobre el mandato de Jesús de servir al prójimo y cómo la iglesia debe ser un faro de evangelización.</p>
+                    <div class="mt-auto text-center">
+                        <a href="#" target="_blank" class="inline-block px-6 py-2 text-sm font-semibold text-white bg-evangelismo-color rounded-full hover:bg-red-700 transition shadow-md">Leer más <i class="fas fa-book-open ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    
+
+    <section id="videos" class="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" 
+    data-bg="foto3.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-gray-900 bg-opacity-85"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <span class="text-sm font-semibold uppercase tracking-wider text-accent-yellow">Multimedia</span>
+            <h2 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-2">Videos y Predicaciones</h2>
+        </div>
+        
+        <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+            
+            <div class="lg:col-span-2 mb-8 lg:mb-0 bg-black rounded-xl shadow-2xl overflow-hidden border-t-4 border-accent-blue transform transition duration-500 hover:shadow-accent-blue/20">
+                <div class="aspect-video w-full"> 
+                    <iframe id="video-iframe" class="w-full h-full" 
+                        src="https://www.youtube.com/embed/a0GK42_Foso?rel=0&modestbranding=1" 
+                        frameborder="0" 
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="p-4 bg-white border-t">
+                    <p id="current-video-title" class="text-lg font-bold text-gray-900">
+                        <i class="fas fa-video mr-2 text-red-600"></i> Video Actual: Predicación: El Poder de la Oración
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+    <div class="bg-white rounded-xl shadow-2xl p-4 border-t-4 border-pink-damas min-h-[400px] lg:h-[500px] flex flex-col">
+        <h3 class="text-xl font-serif font-bold text-gray-900 mb-4 border-b pb-2">
+            <i class="fas fa-list-ul mr-2 text-pink-damas"></i> Lista de Predicaciones
+        </h3>
+        
+        <div id="video-list-container" class="flex-grow overflow-y-auto pr-2 custom-scroll"> 
+            <div id="video-list" class="flex flex-col space-y-3">
+                </div>
+            <h4 class="text-center text-gray-400 pt-4 text-xs italic">
+                ... más videos disponibles al hacer scroll ...
+            </h4>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Estilo opcional para que la barra de scroll de la lista se vea elegante */
+    .custom-scroll::-webkit-scrollbar {
+        width: 5px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background: #ec4899; /* Color rosa damas */
+        border-radius: 10px;
+    }
+</style>
+</section>
+
+
+<section id="comunidad" class="relative py-16 px-4 overflow-hidden" 
+    data-bg="foto2.jpeg" style="background-size: cover; background-position: center; background-attachment: fixed;">
+    
+    <div class="absolute inset-0 bg-blue-900/85 backdrop-blur-[3px]"></div>
+
+    <div class="relative z-10 max-w-4xl mx-auto">
+        
+        <div id="seccion-comentarios" class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+            
+            <div class="bg-gradient-to-r from-blue-800 to-blue-900 p-6 text-white border-b-4 border-yellow-500">
+                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                    <div class="text-center md:text-left">
+                        <h3 class="text-2xl font-black uppercase tracking-tight m-0">Muro de Bendiciones</h3>
+                        <div class="flex items-center justify-center md:justify-start gap-2 mt-1">
+                            <span id="led-status" class="w-2.5 h-2.5 bg-yellow-400 rounded-full animate-pulse shadow-[0_0_8px_#fbbf24]"></span>
+                            <p id="status-api" class="text-xs font-bold opacity-80 m-0 uppercase tracking-widest">Conectando...</p>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 px-4 py-2 rounded-full text-xs font-bold">
+                        Comunidad Suba Rincón
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-4 md:p-6 bg-slate-50 border-b border-slate-200">
+                <div class="flex flex-col gap-3">
+                    <div class="flex gap-3">
+                        <div class="hidden md:flex w-10 h-10 bg-blue-100 rounded-full items-center justify-center text-blue-600">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="user-name" placeholder="Tu nombre..." maxlength="40" autocomplete="off"
+                               class="flex-1 p-3 rounded-xl border-2 border-slate-200 outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all font-semibold">
+                    </div>
+                    
+                    <textarea id="user-msg" placeholder="Escribe una bendición o menciona a alguien con @..." rows="2" maxlength="300"
+                              class="w-full p-4 rounded-xl border-2 border-slate-200 outline-none focus:border-blue-600 focus:ring-4 focus:ring-blue-100 transition-all resize-none font-medium"></textarea>
+                    <div class="flex justify-end"><span id="char-count" class="text-[10px] text-slate-400 font-bold">0 / 300</span></div>
+                    
+                    <div class="flex justify-end items-center gap-4">
+                        <span class="text-[10px] text-slate-400 font-bold uppercase hidden md:block italic">Usa @ para mencionar</span>
+                        <button id="btn-publicar" onclick="publicarComentario()" 
+                                class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-3 rounded-xl font-bold transition-all shadow-lg flex items-center gap-2 active:scale-95">
+                            <span>Publicar</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white relative">
+                <div id="contenedor-mensajes" class="h-[550px] overflow-y-auto p-4 md:p-8 flex flex-col gap-6 scroll-smooth custom-scrollbar">
+                    <div class="flex flex-col items-center py-20 text-slate-400">
+                        <i class="fas fa-circle-notch fa-spin text-3xl mb-4"></i>
+                        <p class="font-bold">Preparando el muro...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center animacion-soft">
+    <a href="https://forms.gle/s53rJag1vfQ6rL2A6" 
+       class="group relative inline-flex items-center gap-3 bg-gradient-to-r from-green-600 to-green-500 text-white px-8 py-3.5 rounded-full font-bold text-sm md:text-base tracking-wide shadow-[0_10px_20px_rgba(22,163,74,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_15px_25px_rgba(22,163,74,0.4)] border border-green-400/20 overflow-hidden">
+        
+        <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+        
+        <i class="fas fa-heart text-white group-hover:animate-ping"></i>
+        
+        <span class="relative uppercase tracking-widest">Enviar Petición de Oración</span>
+    </a>
+    
+    <p class="text-white mt-5 font-serif italic opacity-80 text-base md:text-lg" style="font-family: 'Playfair Display', serif;">
+        "Clama a mí, y yo te responderé" <span class="not-italic font-sans font-bold text-xs ml-1 opacity-70">— JEREMÍAS 33:3</span>
+    </p>
+</div>
+</section>
+
+<style>
+    .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+    
+    .mencion {
+        color: #1d4ed8;
+        font-weight: 700;
+        background: #eff6ff;
+        padding: 2px 4px;
+        border-radius: 4px;
+    }
+
+    .mensaje-card {
+        display: flex;
+        gap: 12px;
+        animation: slideIn 0.5s ease-out;
+    }
+
+    .bubble {
+        background: #f1f5f9;
+        padding: 14px 18px;
+        border-radius: 0 20px 20px 20px;
+        max-width: 85%;
+        position: relative;
+        border: 1px solid #e2e8f0;
+    }
+
+    .es-mio .bubble {
+        background: #eef2ff;
+        border-color: #c7d2fe;
+    }
+
+    .controles-btn {
+        display: flex;
+        gap: 5px;
+        margin-top: 8px;
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+    .mensaje-card:hover .controles-btn { opacity: 1; }
+
+    @keyframes slideIn {
+        from { opacity: 0; transform: translateX(-10px); }
+        to { opacity: 1; transform: translateX(0); }
+    }
+</style>
+
+<script>
+    const URL_API = "https://foro-mmm-backend.onrender.com/api/comments";
+
+    // Guarda IDs de mensajes propios en localStorage
+    function misMensajes() { return JSON.parse(localStorage.getItem('mis_msjs_v4') || '[]'); }
+    function guardarId(id) {
+        const ids = misMensajes();
+        ids.push(id);
+        localStorage.setItem('mis_msjs_v4', JSON.stringify(ids));
+    }
+
+    // SEGURIDAD: Escapa HTML para prevenir XSS
+    function sanitizar(str) {
+        if (typeof str !== 'string') return '';
+        return str
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#039;');
+    }
+
+    // Procesa menciones @ sobre texto ya sanitizado
+    function procesarTexto(texto) {
+        return sanitizar(texto).replace(/@(\w{1,30})/g, '<span class="mencion">@$1</span>');
+    }
+
+    // Contador de caracteres en tiempo real
+    const msgTextarea = document.getElementById('user-msg');
+    const charCount = document.getElementById('char-count');
+    if (msgTextarea && charCount) {
+        msgTextarea.addEventListener('input', () => {
+            const len = msgTextarea.value.length;
+            charCount.textContent = `${len} / 300`;
+            charCount.style.color = len > 270 ? '#ef4444' : '';
+        });
+    }
+
+    async function obtenerComentarios() {
+        const divContenedor = document.getElementById('contenedor-mensajes');
+        const st = document.getElementById('status-api');
+        const led = document.getElementById('led-status');
+        const mIds = misMensajes();
+
+        try {
+            const respuesta = await fetch(URL_API);
+            if (!respuesta.ok) throw new Error('Error de red');
+            const comentarios = await respuesta.json();
+
+            st.innerText = "Sincronizado ✅";
+            led.style.background = "#4ade80";
+
+            comentarios.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            // Limitar a los 50 mensajes más recientes para no sobrecargar el DOM
+            const recientes = comentarios.slice(0, 50);
+
+            divContenedor.innerHTML = recientes.map(c => {
+                const esMio = mIds.includes(c._id);
+                const fecha = new Date(c.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+                const hora = new Date(c.date).toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                const idSanitizado = sanitizar(c._id);
+
+                return `
+                <div class="mensaje-card ${esMio ? 'es-mio' : ''}">
+                    <div class="w-10 h-10 rounded-full bg-blue-600 flex-shrink-0 flex items-center justify-center text-white font-bold shadow-md">
+                        ${sanitizar(c.username).charAt(0).toUpperCase()}
+                    </div>
+                    <div class="flex flex-col items-start w-full">
+                        <div class="bubble shadow-sm">
+                            <div class="flex justify-between items-center gap-4 mb-1">
+                                <span class="font-black text-blue-900 text-sm">${sanitizar(c.username)}</span>
+                                <span class="text-[9px] text-slate-400 font-bold uppercase">${fecha} • ${hora}</span>
+                            </div>
+                            <p class="text-slate-700 text-sm md:text-base leading-relaxed font-medium">
+                                ${procesarTexto(c.text)}
+                            </p>
+                        </div>
+                        ${esMio ? `
+                        <div class="controles-btn">
+                            <button onclick="editarMensaje('${idSanitizado}')" class="text-[10px] font-bold text-blue-600 hover:underline">Editar</button>
+                            <span class="text-slate-300">•</span>
+                            <button onclick="eliminarMensaje('${idSanitizado}')" class="text-[10px] font-bold text-red-500 hover:underline">Borrar</button>
+                        </div>` : ''}
+                    </div>
+                </div>`;
+            }).join('');
+        } catch (error) {
+            st.innerText = "Reconectando...";
+            led.style.background = "#fbbf24";
+        }
+    }
+
+    // SEGURIDAD: Rate limiting — máximo 1 mensaje cada 15 segundos
+    let ultimaPublicacion = 0;
+
+    async function publicarComentario() {
+        const n = document.getElementById('user-name');
+        const m = document.getElementById('user-msg');
+        const b = document.getElementById('btn-publicar');
+
+        const nombre = n.value.trim().slice(0, 40);
+        const texto = m.value.trim().slice(0, 300);
+
+        if (!nombre || !texto) {
+            alert("Por favor escribe tu nombre y un mensaje.");
+            return;
+        }
+
+        // Rate limiting: evitar spam
+        const ahora = Date.now();
+        if (ahora - ultimaPublicacion < 15000) {
+            const espera = Math.ceil((15000 - (ahora - ultimaPublicacion)) / 1000);
+            alert(`Por favor espera ${espera} segundos antes de publicar de nuevo.`);
+            return;
+        }
+
+        b.disabled = true;
+        b.innerHTML = '<i class="fas fa-sync fa-spin"></i>';
+
+        try {
+            const res = await fetch(URL_API, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ username: nombre, text: texto })
+            });
+            if (!res.ok) throw new Error('Error del servidor');
+            const data = await res.json();
+            if (data._id) {
+                guardarId(data._id);
+                ultimaPublicacion = Date.now();
+                m.value = "";
+                if (charCount) charCount.textContent = "0 / 300";
+                obtenerComentarios();
+                document.getElementById('contenedor-mensajes').scrollTop = 0;
+            }
+        } catch (e) {
+            alert("Error de conexión. Inténtalo de nuevo.");
+        } finally {
+            b.disabled = false;
+            b.innerHTML = '<span>Publicar</span><i class="fas fa-paper-plane"></i>';
+        }
+    }
+
+    // Guarda el texto del mensaje antes de editar (no desde el HTML)
+    const _mensajesCache = {};
+
+    async function eliminarMensaje(id) {
+        if (!confirm("¿Borrar mensaje?")) return;
+        await fetch(`${URL_API}/${encodeURIComponent(id)}`, { method: 'DELETE' });
+        obtenerComentarios();
+    }
+
+    async function editarMensaje(id) {
+        const viejo = _mensajesCache[id] || '';
+        const nuevo = prompt("Edita tu bendición:", viejo);
+        if (!nuevo || nuevo === viejo) return;
+        const textoLimitado = nuevo.trim().slice(0, 300);
+        await fetch(`${URL_API}/${encodeURIComponent(id)}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text: textoLimitado })
+        });
+        obtenerComentarios();
+    }
+
+    // Carga inicial
+    obtenerComentarios();
+    // Actualizar cada 30 segundos (menos agresivo)
+    setInterval(obtenerComentarios, 30000);
+</script>
+
+
+<footer class="relative bg-gray-900 text-white pt-20 pb-10 overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-accent-blue via-accent-yellow to-pink-damas opacity-90"></div>
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            
+            <div class="flex flex-col">
+                <div class="grid grid-cols-[auto_1fr] gap-3 items-center mb-6">
+                    <div class="w-20 h-20 flex items-center justify-center">
+                        <img loading="lazy" decoding="async" src="https://nuevo.mmmsalamancaespana.com/wp-content/uploads/2024/11/logo-MMM-oficial.png" 
+                             alt="Logo MMM" 
+                             class="max-w-full max-h-full object-contain brightness-0 invert drop-shadow-[0_0_8px_rgba(255,255,255,0.2)]">
+                    </div>
+                    
+                    <h4 class="text-2xl sm:text-3xl font-black text-white tracking-tighter uppercase leading-tight" style="font-family: Arial, sans-serif;">
+                        Suba Rincón
+                    </h4>
+                </div>
+
+                <div class="ml-0 sm:pl-[92px] space-y-6">
+                    <p class="text-gray-400 text-sm leading-relaxed border-l-2 border-gray-700 pl-4 italic">
+                        "Un lugar para encontrar esperanza, familia y el propósito de Dios para tu vida."
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3 text-gray-300 group">
+                            <div class="bg-gray-800 p-2 rounded-lg group-hover:bg-accent-yellow transition-colors duration-300 shadow-inner">
+                                <i class="fas fa-map-marker-alt text-accent-yellow group-hover:text-gray-900"></i>
+                            </div>
+                            <span class="text-sm font-medium self-center leading-snug">
+                                Suba Rincón, Bogotá - Colombia<br>
+                                <span class="text-gray-500 text-xs">Cra. 93 #129c 95</span>
+                            </span>
+                        </div>
+                        
+                        <a href="https://www.google.com/maps/search/?api=1&query=Cra.+93+%23129c+95+Suba+Rincon+Bogota" 
+                           target="_blank" 
+                           class="inline-flex items-center gap-2 px-4 py-2 bg-gray-800 hover:bg-accent-blue text-white hover:text-white text-xs font-bold rounded-lg transition-all duration-300 border border-gray-700 hover:border-accent-blue shadow-lg group">
+                            <i class="fas fa-directions text-accent-blue group-hover:text-white transition-colors"></i>
+                            CÓMO LLEGAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:pt-4">
+                <h4 class="text-lg font-bold mb-8 flex items-center gap-3">
+                    <span class="w-3 h-3 bg-accent-yellow rounded-full shadow-[0_0_8px_rgba(255,215,0,0.5)]"></span>
+                    NAVEGACIÓN
+                </h4>
+                <ul class="grid grid-cols-2 gap-y-4 gap-x-2 text-gray-400 text-sm">
+                    <li><a href="#inicio" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Inicio</a></li>
+                    <li><a href="#servicios" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Horarios</a></li>
+                    <li><a href="#ministerios" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Ministerios y Equipos</a></li>
+                    <li><a href="#articulos" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Artículos</a></li>
+                    <li><a href="#eventos" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Eventos</a></li>
+                    <li><a href="#videos" class="hover:text-accent-yellow transition-all flex items-center gap-2 group"><i class="fas fa-circle text-[6px] opacity-30 group-hover:opacity-100 group-hover:scale-125 transition-all"></i> Videos y Predicaciones</a></li>
+                </ul>
+            </div>
+
+            <div class="md:pt-4">
+                <h4 class="text-lg font-bold mb-8 flex items-center gap-3 md:justify-start justify-center">
+                    <span class="w-3 h-3 bg-accent-yellow rounded-full shadow-[0_0_8px_rgba(0,123,255,0.5)]"></span>
+                    CONÉCTATE
+                </h4>
+                <div class="flex justify-center md:justify-start gap-4 mb-8">
+                    <a href="https://wa.link/otlyjs" target="_blank" class="group flex items-center justify-center w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 hover:border-green-500 transition-all duration-300 shadow-lg hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-2xl text-green-500 group-hover:scale-110 transition-transform !font-brands"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mmmsubarincon" target="_blank" class="group flex items-center justify-center w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 hover:border-blue-600 transition-all duration-300 shadow-lg hover:-translate-y-1">
+                        <i class="fab fa-facebook-f text-xl text-blue-600 group-hover:scale-110 transition-transform !font-brands"></i>
+                    </a>
+                    <a href="https://youtube.com/@mmmsubarincon?si=c6w7mN_HKHeS5_VM" target="_blank" class="group flex items-center justify-center w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 hover:border-red-600 transition-all duration-300 shadow-lg hover:-translate-y-1">
+                        <i class="fab fa-youtube text-xl text-red-600 group-hover:scale-110 transition-transform !font-brands"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@iglesiammmsubarincon?_r=1&_t=ZS-9317RHbqA4b" target="_blank" class="group flex items-center justify-center w-12 h-12 rounded-xl bg-gray-800 border border-gray-700 hover:border-white transition-all duration-300 shadow-lg hover:-translate-y-1">
+                        <i class="fab fa-tiktok text-xl text-white group-hover:scale-110 transition-transform !font-brands"></i>
+                    </a>
+                </div>
+                <div class="p-4 bg-gray-800/50 rounded-xl border border-gray-700/50 shadow-inner">
+                    <p class="text-[11px] text-gray-400 italic leading-tight text-center md:text-left">
+                        <i class="fas fa-quote-left mr-2 text-accent-yellow opacity-50"></i>
+                        Id por todo el mundo y predicad el evangelio a toda criatura.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-800 pt-10 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2026 <span class="text-white font-bold">Iglesia MMM Suba Rincón</span>.
+                </p>
+                <div class="flex items-center gap-2 px-4 py-1.5 bg-gray-800/80 rounded-full border border-gray-700 backdrop-blur-sm">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span class="text-[10px] text-gray-400 font-bold uppercase font-mono tracking-widest">Versión 4.0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+/* ESTO ES VITAL: 
+   Obligamos a que los iconos de marcas usen la fuente de FontAwesome 
+   y no hereden el Arial que pusimos globalmente.
+*/
+.fab, .fa-brands {
+    font-family: 'Font Awesome 6 Brands' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+}
+</style>
+
+
+   <script>
+    // 1. DEFINICIÓN DE VARIABLES (Vital para que no de error)
+    let eventoInstalacion;
+    const botonInstalar = document.getElementById('btnInstalar');
+    const contenedorInstalar = document.getElementById('contenedor-instalar');
+    const capaFondo = document.getElementById('capaFondo');
+
+    // 2. EFECTO PARALLAX (Mueve la foto7.jpeg al hacer scroll)
+    window.addEventListener('scroll', () => {
+        if (capaFondo) {
+            let pos = window.pageYOffset;
+            // Desplaza la imagen un 40% de la velocidad del scroll
+            capaFondo.style.transform = `translateY(${pos * 0.4}px)`;
+        }
+    });
+
+    // 3. LÓGICA DE INSTALACIÓN
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Evitar que Chrome muestre su propio aviso automático
+        e.preventDefault();
+        // Guardar el evento
+        eventoInstalacion = e;
+        // Mostrar el botón personalizado
+        if (contenedorInstalar) {
+            contenedorInstalar.style.display = 'flex'; // Usamos flex para el centrado que pusimos en el CSS
+        }
+    });
+
+    if (botonInstalar) {
+        botonInstalar.addEventListener('click', async () => {
+            if (eventoInstalacion) {
+                // Mostrar el aviso de instalación
+                eventoInstalacion.prompt();
+                // Esperar la respuesta
+                const { outcome } = await eventoInstalacion.userChoice;
+                if (outcome === 'accepted') {
+                    console.log('El usuario aceptó instalar la app');
+                }
+                // Ocultar el botón
+                contenedorInstalar.style.display = 'none';
+                eventoInstalacion = null;
+            }
+        });
+    }
+
+    // Ocultar si ya se instaló
+    window.addEventListener('appinstalled', () => {
+        if (contenedorInstalar) {
+            contenedorInstalar.style.display = 'none';
+        }
+        console.log('App instalada con éxito');
+    });
+
+    // 4. FIX DE ALTURA PARA MÓVILES (Evita la división de la sección)
+    const ajustarPantalla = () => {
+        let vh = window.innerHeight * 0.01;
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+    window.addEventListener('resize', ajustarPantalla);
+    ajustarPantalla();
+</script>
+<script src="script.js"></script>
+
+<script>
+// Lazy loading para fondos CSS (data-bg)
+// Carga la imagen de fondo solo cuando la sección entra en pantalla
+(function() {
+    var lazyBgs = document.querySelectorAll('[data-bg]');
+    if (!lazyBgs.length) return;
+
+    if ('IntersectionObserver' in window) {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    var el = entry.target;
+                    var img = el.getAttribute('data-bg');
+                    if (img) {
+                        el.style.backgroundImage = "url('" + img + "')";
+                        el.removeAttribute('data-bg');
+                    }
+                    observer.unobserve(el);
+                }
+            });
+        }, { rootMargin: '200px 0px' }); // Empieza a cargar 200px antes de ser visible
+
+        lazyBgs.forEach(function(el) { observer.observe(el); });
+    } else {
+        // Navegadores antiguos: cargar todo de inmediato
+        lazyBgs.forEach(function(el) {
+            var img = el.getAttribute('data-bg');
+            if (img) el.style.backgroundImage = "url('" + img + "')";
+        });
+    }
+})();
+</script>
+
+<script>
+// Registro del Service Worker para modo offline (PWA)
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('./sw.js')
+      .then(function(reg) {
+        console.log('[PWA] Service Worker registrado:', reg.scope);
+      })
+      .catch(function(err) {
+        console.warn('[PWA] Error al registrar SW:', err);
+      });
+  });
+}
+</script>
+</body>
+</html>
+

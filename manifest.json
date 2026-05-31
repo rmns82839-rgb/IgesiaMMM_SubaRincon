@@ -1,0 +1,38 @@
+{
+  "name": "Iglesia MMM Suba Rincón",
+  "short_name": "MMM Suba",
+  "description": "Comunidad cristiana MMM en el barrio Suba Rincón, Bogotá.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#1E40AF",
+  "lang": "es-CO",
+  "icons": [
+    {
+      "src": "./logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ministerios",
+      "url": "./caballeros.html",
+      "description": "Ver ministerios de la iglesia"
+    },
+    {
+      "name": "Peticiones",
+      "url": "https://forms.gle/s53rJag1vfQ6rL2A6",
+      "description": "Enviar una petición de oración"
+    }
+  ]
+}
